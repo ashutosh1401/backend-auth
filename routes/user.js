@@ -8,9 +8,6 @@ const multer = require("multer");
 const sharp = require("sharp");
 const { JWT_SECRET } = require("../config/keys");
 
-router.get("/", (req, res) => {
-    res.send("Hello");
-})
 
 router.post("/signup", (req, res) => {
     const { name, email, password } = req.body;
